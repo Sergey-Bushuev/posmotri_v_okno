@@ -8,7 +8,6 @@
 .result__video-container video {
     width: 711px;
     height: 386px;
-    margin-top: 77px;
 }
 .search-form {
     align-items: end;
@@ -190,6 +189,7 @@ article.content__video-card:active {
 }
 .result__video-container {
     position: relative;
+    width: 711px;
 }
 .preloader {
     width: 100%;
@@ -197,4 +197,7 @@ article.content__video-card:active {
 }
 ul.content__list {
     position: relative;
+}
+section.result {
+    padding-top: 77px;
 }
