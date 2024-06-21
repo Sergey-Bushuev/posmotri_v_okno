@@ -2,8 +2,11 @@
     display: flex;
     gap: 30px;
     padding-left: 18px;
-    margin-top: 50%;
-    transform: translateY(-50%);
+}
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .result__video-container video {
     width: 711px;
@@ -122,6 +125,7 @@ ul.content__list {
     gap: 30px;
     height: 300px;
     overflow-y: auto;
+    width: 399px;
 }
 button.button.more-button {
     width: 100%;
@@ -200,4 +204,8 @@ ul.content__list {
 }
 section.result {
     padding-top: 77px;
+}
+.page {
+    width: 1200px;
+    height: 900px;
 }
