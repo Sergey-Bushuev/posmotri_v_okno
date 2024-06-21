@@ -198,6 +198,3 @@ article.content__video-card:active {
 ul.content__list {
     position: relative;
 }
-.visually-hidden {
-    position: absolute;
-}
