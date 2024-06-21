@@ -2,13 +2,13 @@
     display: flex;
     gap: 30px;
     padding-left: 18px;
-    margin-top: -77px;
-}
 
+}
 .page {
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    overflow: hidden;
 }
 .result__video-container video {
     width: 711px;
@@ -164,6 +164,7 @@ button.button.search-form__submit-button:hover {
 button.button.search-form__submit-button:active {
     text-decoration: none;
     background: #545050;
+    outline: 0px solid #fff!important;
 }
 button.button.search-form__submit-button:focus {
     outline: 1px solid #fff;
@@ -192,6 +193,7 @@ article.content__video-card:focus {
 }
 article.content__video-card:active {
     background: #545050;
+    text-decoration: none;
 }
 .result__video-container {
     position: relative;
@@ -207,7 +209,4 @@ ul.content__list {
 section.result {
     padding-top: 77px;
 }
-.page {
-    width: 1200px;
-    height: 900px;
-}
+
