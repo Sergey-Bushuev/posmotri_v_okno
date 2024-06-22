@@ -36,9 +36,266 @@ ul,
 ol {
   list-style: none;
 }
+
 .visually-hidden {
   position: absolute;
   width: 100%;
   height: 100%;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
+.content {
+  display: flex;
+  gap: 30px;
+  padding-left: 18px;
+
+}
+
+.page {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.result__video-container video {
+  width: 711px;
+  object-fit: cover;
+  height: 386px;
+}
+
+.search-form {
+  align-items: end;
+  display: flex;
+  gap: 40px;
+  padding-top: 17px;
+  padding-left: 11px;
+}
+
+.search-form__checkbox-list {
+  gap: 16px;
+  display: flex;
+}
+
+.search-form__label-text.visually-hidden {
+  display: none;
+}
+
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.search-form__textfield {
+  position: relative;
+  background: none;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  font-weight: 400;
+  font-size: 16.5px;
+  width: 225px;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  border-left: 1px solid #ffffff00;
+  border-right: 1px solid #ffffff00;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__pseudo-checkbox {
+  width: 16px;
+  height: 16px;
+  background: none;
+  outline: 1px solid #fff;
+  vertical-align: sub;
+  display: inline-block;
+  position: relative;
+  outline-offset: 2px;
+}
+
+.search-form__checkbox.visually-hidden {
+  display: none;
+}
+
+.search-form__checkbox.visually-hidden:checked+span.search-form__pseudo-checkbox {
+  background: #fff;
+}
+
+.search-form__checkbox.visually-hidden:active+span.search-form__pseudo-checkbox {
+  background: #fff;
+}
+
+.button.search-form__submit-button {
+  line-height: 21.6px;
+  width: 194px;
+  height: 34px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__video-card {
+  display: flex;
+  width: 399px;
+  justify-content: space-between;
+
+}
+
+.content__video-card-description-container {
+  padding: 2px 0 0 2px;
+}
+
+.content__video-card-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 90%;
+  color: #fff;
+
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.content__list {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 300px;
+  overflow-y: auto;
+  width: 399px;
+}
+
+.button.more-button {
+  width: 100%;
+  margin-top: 10px;
+  height: 34px;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  background: none;
+  border: 1px solid #fff;
+}
+
+.search-form__label {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.search-form__label:hover .search-form__label-text {
+  border-bottom: 1px solid;
+}
+
+.search-form__label:focus {
+  border: 1px solid;
+}
+
+.search-form__label:active .search-form__label-text {
+  border-bottom: none;
+}
+
+.content__list::-webkit-scrollbar {
+  display: none;
+}
+
+.content__card-link {
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: 1px solid #fff;
+  outline-offset: 3px;
+}
+
+.button {
+  position: relative;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+.search-form__textfield:focus {
+  outline: 1px solid #fff;
+  outline-offset: 3px;
+}
+.button:active {
+  text-decoration: none;
+  background: #545050;
+  outline: 0px solid #fff;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.content__video-card:focus {
+  border: 1px solid #fff;
+}
+
+.content__video-card:active {
+  background: #545050;
+  text-decoration: none;
+}
+
+.result__video-container {
+  position: relative;
+  width: 711px;
+}
+
+.preloader {
+  width: 100%;
+  height: 100%;
+}
+
+.content__list {
+  position: relative;
+}
+
+.result {
+  padding-top: 77px;
+}
